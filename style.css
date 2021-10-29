@@ -1,19 +1,124 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+* {
   scroll-behavior: smooth;
+  font-family: 'Baloo Bhaina 2';
 }
-/* .hr1::after{
-     content:"Hey";
-     /* border: 1px solid red; */
-/* }
-.hr2::before{
-  content: "hey";
-  color: black;
-} */ 
-.Project{
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 0;
+  background: transparent;
+}
+
+.Picture{
+  mask-image: image(url('https://source.unsplash.com/random'),skyblue);
+  /* mask-image: linear-gradient(rdba(0,0,0,1.0),transparent); */
+}
+
+.topbtn{
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  width: 2.5%;
+  height: 5.5%;
+  transition: all;
+  animation: topbtn 1s ease;
+}
+
+@keyframes topbtn {
+  from{
+      right: 0%;
+     
+  }
+  to{
+      right: 3%;
+     
+  }
+}
+
+
+.Project {
   overflow: hidden;
 }
 
-.Project:hover  .card_hover{
-      transform: scale(1.12);
-      transition: all .5s;
+.Project:hover .card_hover {
+  transform: scale(1.12);
+  transition: all .5s;
 }
+
+.footer_icon{
+  padding: 15px 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  display: flex;
+  transition: 1s;
+}
+
+/* Add a hover effect if you want */
+.footer_icon:hover {
+  opacity: 0.7;
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Facebook */
+.fa-facebook {
+  border-color: white;
+  margin-left: 100px;
+  color: white;
+}
+
+.fa-facebook:hover {
+  /* transform: translateY(25px); */
+  color: #0056b3;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  color: #833AB4;
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+
+	      
+@media (max-width : 400px  ){          
+  .fa {
+    width: 40px;
+height: 50px;
+padding: 15px 10px;
+  }
+  .fa-facebook{
+    margin-left: 40px;
+  }
+  .fa-instagram{
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .topbtn{
+    width: 11.5%;
+    height: 7.5%;
+  }
+}
+
+@media (min-width :1224px){
+.fa{
+  width: 40px;
+height: 50px;
+}
+} 
