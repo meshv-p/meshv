@@ -1,0 +1,19 @@
+*{
+  scroll-behavior: smooth;
+}
+/* .hr1::after{
+     content:"Hey";
+     /* border: 1px solid red; */
+/* }
+.hr2::before{
+  content: "hey";
+  color: black;
+} */ 
+.Project{
+  overflow: hidden;
+}
+
+.Project:hover  .card_hover{
+      transform: scale(1.12);
+      transition: all .5s;
+}
